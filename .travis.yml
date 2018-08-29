@@ -4,4 +4,4 @@ services:
     - docker
 
 script:
-    -docker run --rm -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven maven:3.3.9-jdk-8 mvn -Dmaven.test.failure.ignore clean package
+    - docker run --rm -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven maven:3.3.9-jdk-8 mvn -Dmaven.test.failure.ignore clean package
